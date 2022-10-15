@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.squares {
+  height: 495px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.squares ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* width: 306px; */
+  padding-left: 0;
+}
+.squares ul .square {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+#exit {
+  position: relative;
+}
+#exit span {
+  position: absolute;
+  bottom: 230px;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
