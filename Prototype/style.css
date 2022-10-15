@@ -1,0 +1,39 @@
+* {
+  // box-sizing: 
+}
+
+.squares {
+    // width: 1249px;
+    height: 495px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  ul {
+    // position: relative;
+    // top: 60px;
+    // left: 60px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 306px; */
+    padding-left: 0;
+  
+    .square {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+#exit {
+   position: relative;
+  
+  span {
+   position: absolute;
+   bottom: 230px;
+   right: 0;
+    
+  }
+}
