@@ -1,11 +1,3 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .squares {
   list-style: none;
   width: 98vw;
@@ -49,8 +41,4 @@ body {
   position: absolute;
   bottom: 230px;
   right: 0;
-}
-
-:root {
-  --square-size: 100px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

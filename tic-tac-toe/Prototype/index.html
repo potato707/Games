@@ -31,19 +31,17 @@
   <!-- Start pause and play button -->
 
   <!-- Start tic tac toe-->
-  <div id="squares" class="squares">
-    <ul>
-      <li id="square-1" class="square"></li>
-      <li id="square-2" class="square"></li>
-      <li id="square-3" class="square"></li>
-      <li id="square-4" class="square"></li>
-      <li id="square-5" class="square"></li>
-      <li id="square-6" class="square"></li>
-      <li id="square-7" class="square"></li>
-      <li id="square-8" class="square"></li>
-      <li id="square-9" class="square"></li>
-    </ul>
-  </div>
+  <ul id="squares" class="squares">
+    <li id="square-1" class="square cell-x" data-square></li>
+    <li id="square-2" class="square cell-o" data-square></li>
+    <li id="square-3" class="square cell-x" data-square></li>
+    <li id="square-4" class="square cell-o" data-square></li>
+    <li id="square-5" class="square cell-o" data-square></li>
+    <li id="square-6" class="square cell-x" data-square></li>
+    <li id="square-7" class="square cell-o" data-square></li>
+    <li id="square-8" class="square cell-o" data-square></li>
+    <li id="square-9" class="square cell-x" data-square></li>
+  </ul>
   <!-- End tic tac toe-->
 
   <!-- Start exit button -->
@@ -51,6 +49,13 @@
     <span>exit</span>
   </div>
   <!-- End exit button -->
+
+  <!-- Start winning message -->
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message></div>
+    <button id="restartButton">Restart</button>
+  </div>
+  <!-- End winning message -->
 
   <!-- start links javascript -->
   <script src="js/custom.js"></script>
