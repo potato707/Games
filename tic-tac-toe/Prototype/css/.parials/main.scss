@@ -9,13 +9,13 @@ header {
     border: 4px solid var(--color-brown);
     border-radius: 15px 0;
     font-weight: bold;
+    cursor: pointer;
   }  
 }
 
 .squares {
   width: 98vw;
-  height: 84vh;
-  
+  height: 82vh;
   grid-template-columns: repeat(3, auto);
   
 
@@ -29,6 +29,7 @@ header {
     border: 4px solid var(--color-brown);
     border-radius: 15px 0;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .square:first-child,
