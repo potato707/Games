@@ -14,48 +14,54 @@
   <title>Tic Tac Toe</title>
 
   <!-- start links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->        
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
-    <!-- <link rel="icon" href="images/icon/">هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح -->
+  <!-- Start Bootsrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="css/style1.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Start Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->    
+
+  <!-- Start Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
+  
+  <!-- <link rel="icon" href="images/icon/">هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح -->
+  
+  <!-- Start Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Start pause and play button -->
-  <div class="pause-play">
-    <i class="fa-solid fa-pause"></i>
-  </div>
-  <!-- Start pause and play button -->
+  <header class="d-flex justify-content-between align-item-center">
+      <!-- Start pause and play button -->
+      <div id="pausePlay" class="pause-play">
+        <i class="fa-solid fa-pause"></i>
+      </div>
+    
+      <!-- Start winning message -->
+      <div id="winningMessage" class="winning-message">
+        <div data-winning-message></div>
+        <span id="restartButton">Restart</span>
+      </div>
+          
+      <!-- Start exit button -->
+      <div id="exit" class="exit">
+        <span>exit</span>
+      </div>
+  </header>
 
   <!-- Start tic tac toe-->
-  <ul id="squares" class="squares">
-    <li id="square-1" class="square cell-x" data-square></li>
-    <li id="square-2" class="square cell-o" data-square></li>
-    <li id="square-3" class="square cell-x" data-square></li>
-    <li id="square-4" class="square cell-o" data-square></li>
-    <li id="square-5" class="square cell-o" data-square></li>
-    <li id="square-6" class="square cell-x" data-square></li>
-    <li id="square-7" class="square cell-o" data-square></li>
-    <li id="square-8" class="square cell-o" data-square></li>
-    <li id="square-9" class="square cell-x" data-square></li>
+  <ul id="squares" class="squares list-unstyled d-grid justify-content-center align-items-center align-content-center">
+    <li id="square-1" class="square cell-x d-flex justify-content-center align-items-center" data-square>x</li>
+    <li id="square-2" class="square cell-o d-flex justify-content-center align-items-center" data-square>o</li>
+    <li id="square-3" class="square cell-x d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-4" class="square cell-o d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-5" class="square cell-o d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-6" class="square cell-x d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-7" class="square cell-o d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-8" class="square cell-o d-flex justify-content-center align-items-center" data-square></li>
+    <li id="square-9" class="square cell-x d-flex justify-content-center align-items-center" data-square></li>
   </ul>
   <!-- End tic tac toe-->
-
-  <!-- Start exit button -->
-  <div id="exit">
-    <span>exit</span>
-  </div>
-  <!-- End exit button -->
-
-  <!-- Start winning message -->
-  <div class="winning-message" id="winningMessage">
-    <div data-winning-message></div>
-    <button id="restartButton">Restart</button>
-  </div>
-  <!-- End winning message -->
 
   <!-- start links javascript -->
   <script src="js/custom.js"></script>
