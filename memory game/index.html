@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Start meta -->
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- viewport بساعد على تنسيق الموقع باختلاف احجام الشاشات -->
+
+        <meta name="keywords" content="هنا يوضع الكلمات المفتاحية الخاصة بمحتوى الموقع ">
+    
+        <meta name="description" content="هنا يكتب عبارة ترحيبية او وصف محتوى الموقع قبل دول المستخدم للموقع عن الصفحة البحث في المتصفح">
+        <!-- End meta -->
+
+        <!-- Start Title -->
+        <title></title>
+        <!-- End Title -->
+
+        <!-- start links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->
+		
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../../global-css/style.css">
+
+        <link rel="icon" href="images/icon/"><!--هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح-->
+        <!-- end links -->
+    </head>
+    <body>
+        <!-- المصدر: https://www.webtips.dev/memory-game-in-javascript -->
+        <div class="memory-game">
+            <div class="controls">
+                <button>start</button>
+                <div class="stats">
+                    <div class="moves">0 moves</div>
+                    <div class="timer">time: 0 sec</div>
+                </div>
+            </div>
+            <div class="board-container">
+                <div class="board" data-dimension="4">
+                    <div class="card">
+                        <div class="card-front"></div>
+                        <div class="card-back">X</div>
+                    </div>
+                </div>
+                <div class="win">you won!</div>
+            </div>
+        </div>
+
+        <!-- start links javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.2/umd/popper.min.js" integrity="sha512-Jen3K+iRN4thSYDEyHwUGYFxNslAUCTV9P/g0k836eaoq/tplAUCzRPUyDxKUjBlKdJhamW7S3u7NWSGEEdIQw==" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- end links javascript -->         
+    </body>
+</html>
