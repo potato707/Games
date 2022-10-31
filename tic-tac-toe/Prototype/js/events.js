@@ -12,16 +12,15 @@ const switch_turns = () =>{
 }
 
 const check_if_winner = (element_id) => {
-    square_number = parseInt(element_id.slice(element_id.length-1))
-    isVerticallyWinner()
-    isHorizontallyWinner()
-    isDiagnollyWinner()
+    square_number = parseInt(element_id.slice(element_id.length-1));
+    (isVerticallyWinner() || isHorizontallyWinner() || isDiagnollyWinner()) ? forbidClicks(): {}
 }
 
 const isVerticallyWinner = () => {
     for (i=1; i<=9; i+=3){
         if (grid["square-"+(i.toString())] && grid["square-"+(i.toString())] === grid["square-"+((i+1).toString())] && grid["square-"+((i+1).toString())] === grid["square-"+((i+2).toString())]){
             console.log(grid["square-"+(i.toString())] + " is winner")
+            return true
         }
     }
 }
@@ -30,6 +29,7 @@ const isHorizontallyWinner = () => {
     for (i=1; i<=3; i++){
         if (grid["square-"+(i.toString())] && grid["square-"+(i.toString())] === grid["square-"+((i+3).toString())] && grid["square-"+((i+3).toString())] === grid["square-"+((i+6).toString())]){
             console.log(grid["square-"+(i.toString())] + " is winner")
+            return true
         }
     }
 }
@@ -38,8 +38,14 @@ const isDiagnollyWinner = () => {
     if (grid["square-5"]){
         if (grid["square-1"] === grid["square-5"] && grid["square-5"] === grid["square-9"] || grid["square-3"] === grid["square-5"] && grid["square-5"] === grid["square-7"]){
             console.log(grid["square-5"] + " is winner")
+            return true
         }
     }
+}
+
+const forbidClicks = () => {
+    const squares_elements = [...document.getElementsByClassName("square")];
+    squares_elements.forEach(remove_listener);
 }
 
 const printSquare = (element) => {
@@ -55,6 +61,10 @@ const printSquare = (element) => {
 
 const add_listener = (element) => {
     element.addEventListener("click", printSquare);
+}
+
+const remove_listener = (element) => {
+    element.removeEventListener("click", printSquare);
 }
 
 function main(){
