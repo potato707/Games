@@ -1,0 +1,3 @@
+const restartGame = () => {
+    location.reload()
+}
